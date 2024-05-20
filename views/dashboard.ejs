@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .tab-content {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        .tab-content .tab-pane {
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Dashboard</h1>
+
+    <div class="container">
+        <ul class="nav flex-column nav-pills">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#totalUsers">Total Users</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#userDetails">User Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#rankings">Rankings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#highestScores">Highest Scores</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="tabcontent">
+            <div id="totalUsers" class="tab-pane fade show active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Users</h5>
+                                <p class="card-text">
+                                    <%= totalUsersCount %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Guests</h5>
+                                <p class="card-text">
+                                    <%= rankings.length %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Highest Rank</h5>
+                                <p class="card-text">
+                                    <%= highestScores[0].score %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">All Users</h5>
+                                <p class="card-text">
+                                    <%= totalUsersCount + rankings.length %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="userDetails" class="tab-pane fade">
+                <h2 class="text-center">User Details</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Email</th>
+                            <th>Guest ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let rankCounterR=1; %>
+                            <% users.forEach(user=> { %>
+                                <tr>
+                                    <td>
+                                        <%= rankCounterR++ %>
+                                    </td>
+                                    <td>
+                                        <%= user.email %>
+                                    </td>
+                                    <td>
+                                        <%= user.guestId %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="rankings" class="tab-pane fade">
+                <h2 class="text-center">Rankings</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player Name</th>
+                            <th>guestId</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let rankCounter=1; %>
+                            <% rankings.forEach(rank=> { %>
+                                <tr>
+                                    <td>
+                                        <%= rankCounter++ %>
+                                    </td>
+                                    <td>
+                                        <%= rank.playerName %>
+                                    </td>
+                                    <td>
+                                        <%= rank.guestId %>
+                                    </td>
+                                    <td>
+                                        <%= rank.score %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="highestScores" class="tab-pane fade">
+                <h2 class="text-center">Highest Scores</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Player Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let rankCounterS=1; %>
+                            <% highestScores.forEach(score=> { %>
+                                <tr>
+                                    <td>
+                                        <%= rankCounterS++ %>
+                                    </td>
+                                    <td>
+                                        <%= score.playerName %>
+                                    </td>
+                                    <td>
+                                        <%= score.score %>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "car-game-77716",
+  "private_key_id": "e96bd7aebde213f61811c550f87ea51e1c3c1050",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvKBKZRzxrcQBp\n1eXicnfDC0mN5phcriMdAhHkGFXMBlPHIQjwb63gR1LBMeIw4frabDukSLOXt8vi\nYmaoHfdWDWtoAJFjQgZobhExwcc9/PEz034fh480PMhEcvquM8kz+b4HFE+ieJs7\n7qkcN/fyM8nrhgd/KC5bQbsHbr2CYwFGXc6kFaDI4j8wlNZBr77MT36MpAxOqzdl\nKz0qMiDKoabFHOf1xtVHjqZfZ2dvtifT7guQx+wEvMOyYGQfIrnPFe27lW+uSNkZ\n6faQ9oKVIk3p1UFJ1LU9A2/1J9PlskQWhUQo2Iw7MqEYF+zlQ2Vnug4DTm1w0sK4\nTdBxX+P7AgMBAAECggEADcdduzAW6S7RBQJeHLO7hxzmsuJ+ft/2BCyrAqIFcdDX\nm1UWcm+eooOJ14fYjtbgGHmmMXTEp/097Tencrc0w1C3780HouLJRULPWHYxecdh\npB2RkOJlmgrkCDpxTO3m+I8/aygmYZYSRCMwq3cdqrB3RG9dPJwJFYW0tE96WfzV\ngJ8sEYC89gionsRbAYMzAgtnNuL2IqygSnG9CnDfafZCiqVHGA+hfM8KccWKauM9\ntKOBDPlBKMJOWA0hKjZlCxtk5M0VER6sWO7/1UfChpokUWmJNQSkcJyVZ/Qd5KBa\nmfyNKr+uHof5CNCqxJfWB3b8wWqwzTBMNC1kMmhnqQKBgQDbtY8jBGLyo1yHyne/\nBMnyTe4zTkXhV/8ur2nAWV0uDo9gNIxvcjiEyGRTnGkNIRSdar6YSEVwb5NKuZTl\nwzHm+DVbcFa7ryIZk6ONOfcntyDmxA8kzbbqIwcz3ySyKVJeNVbcZQthO0bFK0i6\n9CuiESkTr00x7KWfkRSIEW3F2QKBgQDMFpiPolbeX6NtfXP5hobhgsERIc6csXa6\n+HElNtQ15vcdIbeJs+jPPvWG1cOgIGsjYZo5u77VKS/46rgEj8DkpA7Gq8bdmR8t\nYejr3uzkhQn49XdTmZgyX215Qo1hgatWp9ieEsL4Y9lPNhdXOGSsdO4SRFdTG9hB\nl+mkJgRv8wKBgAgsWuTMlvm7xgdvKsE6ZmDTMVdLRCI76cxMzjxPlr3N4NuNWOQU\ndbHK2qCZovbQEjpA7FIx7hNeszYGbVmWx1Z2SVXbef6FZ1lYOq9YRq99ioXLKV0P\nIgzXvL7bQDw4eU3z4gVU5PV7BQj0sUHzL2RaCxMmZFLFIOwss3zUWScRAoGBAJJy\nSGkREYqiUBA6LGVKPjFF9SpI+wx/X3ZM3kvY6y/+myYBUsVyHsXQJLjrXWPiv151\nJAj3irlEw9K3AvLrAHxQqPWwv5O106RqFIxku9JDEOPfqA+KMKc8yL5xnifwtzUI\nXi0Xw2YfqAjqBJemtL73bPoYphzR5z0yOAp86UQ3AoGBAL9WoybsATPk+x5U7T2h\n+9j1s2k5H0IkMTyPA8fJmIkHZgv1nuVez2Sbbsm64Z49Kzh6+Jt5wFjg5BGXtDQz\nNrgYMdPcxsFlp2OSzZW42AgEcF2pRhPIZ1jgfKczOBg+HFEpB0CgUO4CvdhrUdPT\n1u7Zp4uB2x2RBc46uVaOZLjy\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-4m4n4@car-game-77716.iam.gserviceaccount.com",
+  "client_id": "109242308450990433798",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-4m4n4%40car-game-77716.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
